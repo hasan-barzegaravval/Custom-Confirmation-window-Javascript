@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>custom confirmation window</title>
+        <script src="confirmationmessage.js"></script>        
+    </head>
+    <body>
+        <div id="section">
+        <input type="text" id='message' name='message'>
+        <input type="button" id='show' value='show' Onclick="onConfirm(document.getElementById('message').value,action)">
+        <p id="result">Confirmed?</p>
+    </body>
+    <script>
+        function action(){
+            document.getElementById('result').innerHTML="it is confirmed yes";
+        }
+    </script>
+</html>
